@@ -1,0 +1,28 @@
+https://www.kaggle.com/c/state-farm-distracted-driver-detection
+
+https://www.kaggle.com/c/digit-recognizer
+
+http://www.nltk.org/
+
+Tutorials YT:
+https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL
+
+https://www.youtube.com/playlist?list=PLQVvvaa0QuDdttJXlLtAJxJetJcqmqlQq
+
+
+https://www.tensorflow.org/get_started/get_started
+http://www.nltk.org/
+
+
+Tutorials web:
+https://pythonprogramming.net/tflearn-machine-learning-tutorial/
+https://pythonprogramming.net/tokenizing-words-sentences-nltk-tutorial/
+
+
+
+https://pythonprogramming.net/consulting/
+
+https://www.tensorflow.org/api_docs/python/tf/reset_default_graph
+
+
+http://sentdex.com/sentiment-analysis/

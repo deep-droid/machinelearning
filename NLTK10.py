@@ -9,7 +9,7 @@
 
 from nltk.corpus import wordnet
 
-nltk.download()
+#nltk.download()
 
 syns = wordnet.synsets("program")
 #synset
@@ -24,37 +24,37 @@ print(syns[0].examples)
 synonyms = []
 antonyms = []
 
-for syn in wordnet.sysnets("good"):
-	for l in syn.lemmas():
-		print("l:", l)
-		synonyms.append(l.name())
-		if l.anonyms():
-			anonyms.append(l.antonyms()[0].name())
+# for syn in wordnet.synset("good"):
+	# for l in syn.lemmas():
+		# print("l:", l)
+		# synonyms.append(l.name())
+		# if l.anonyms():
+			# anonyms.append(l.antonyms()[0].name())
 			
-print(set(synonyms))
-print(set(antonyms))
+# print(set(synonyms))
+# print(set(antonyms))
 
 w1 = wordnet.synset("ship.n.01")
 w2 = wordnet.synset("boat.n.01")
-print(w1.wup_similarity(w2)
+print(w1.wup_similarity(w2))
 
 w1 = wordnet.synset("ship.n.01")
 w2 = wordnet.synset("vessel.n.01")
-print(w1.wup_similarity(w2)
+print(w1.wup_similarity(w2))
 
 w1 = wordnet.synset("ship.n.01")
 w2 = wordnet.synset("car.n.01")
-print(w1.wup_similarity(w2)
+print(w1.wup_similarity(w2))
 
 w1 = wordnet.synset("ship.n.01")
 w2 = wordnet.synset("cat.n.01")
-print(w1.wup_similarity(w2)
+print(w1.wup_similarity(w2))
 
 
 w1 = wordnet.synset("ship.n.01")
 w2 = wordnet.synset("cactus.n.01")
-print(w1.wup_similarity(w2)
+print(w1.wup_similarity(w2))
 
 w1 = wordnet.synset("cat.n.01")
 w2 = wordnet.synset("cactus.n.01")
-print(w1.wup_similarity(w2)
+print(w1.wup_similarity(w2))

@@ -1,0 +1,114 @@
+###############################################################################
+Technology Radar  
+Skip to end of metadata
+Created by Ilya Gerasimov, last modified on Jun 23, 2015 Go to start of metadata
+Motivation
+There are a lot of solutions named "Technology Radar", including EPAM Microsoft CC product. And all of them are based on experts survey. The goal of this project is to build technology radar based on crowd opinions. We want to apply some data science algorithms (mostly text and graph analytics) to some internet resources (like stackoverflow.com) to analyze popularity, mature of technology, the relations between technologies, the attitude to technologies on the part of professionals, the evolution of technologies.
+The approach
+The initial idea of it is to get messages from stream and build some known models of text analytics on it. At the beginning we want to try to apply Latent Dirichlet Allocation to build topic vectors for representation the technology stack and Sentiment analysis for identifying the attitude of professionals to the technologies.
+Project team
+Ilya Gerasimov, Vladimir Bichev
+Project tasks
+#
+Description
+Category
+Status
+ 	
+Download the content of the stackoverflow.com site
+https://archive.org/details/stackexchange
+ 	PLANNED
+ 	Apply LDA algorithm to build vectors of technologies	 	PLANNED
+ 	Visualize of technologies based on vectors distance (Voronoy diagram)	 	PLANNED
+ 	Apply PCA to identify the main components (two dimension diagram)	 	PLANNED
+ 	Visualize of technologies vector based on PCA algorithm	 	PLANNED
+ 	Apply Sentiment Analysis to the messages to identify the strength of technologies	 	PLANNED
+ 	Visualize the strength of technologies based on Sentiment Analysis	 	PLANNED
+ 	Apply the approaches in the context of time	 	PLANNED
+
+
+	
+###############################################################################	
+Deep Learning (NLP)  
+
+Skip to end of metadata
+Created by Anton Petrov1, last modified on Jun 28, 2016 Go to start of metadata
+Status
+IN PROGRESS
+Keywords
+Deep Learning, Neural Networks, Natural Language Processing (NLP), Recurrent Neural Networks (RNN), text classifier, question-answering system
+Description
+The goals of the PoC:
+Get insight into usage of recurrent and convolutional neural networks for solving NLP tasks
+Compare performance of IBM Watson vs. Neural Networks in text classification and question-answering tasks
+Identify areas of possible use for RNNs in NLP
+Deck
+Contacts
+Developers: Anton Petrov1; Dmitrii Nikitko; Alexey Kozhemiakin
+Use cases
+Question Answering
+Sentiment Analysis
+Named entity recognition
+Automatic summarization
+Features
+Automatic feature extraction
+Black box approach
+Question can be formulated in any sensible way. Neural Networks will extract the meaning from the context
+Roadmap
+Test some neural network architectures for QA-tasks
+Develop smart questions answering system for EPAM RFP Reference Library
+Pros
+Features are extracted automatically
+Robust to unfamiliar or erroneous input
+Language agnostic approach, dicitonary is not required
+Open Source 
+Cons
+Labelled dataset is required
+Deep Learning expertise is required
+Recent technology, lack of good reference materials
+
+
+###############################################################################
+Deep Learning (image classification)  
+
+Skip to end of metadata
+Created by Anton Petrov1, last modified on Jul 22, 2016 Go to start of metadata
+Status
+COMPLETED
+Keywords
+Deep Learning, Neural Networks, Image Classification, Computer Vision
+Description
+Convolutional neural networks is the best tool for image classification task. PoC is done on Distracted Drivers dataset. 
+Deck
+
+ Presentation
+
+ Presentation 
+Contacts
+VCS: https://git.epam.com/epmc-bdcc/deep-learning-poc
+Developers: Anton Petrov1; Dmitrii Nikitko 
+Use cases
+Image classification
+Objects detection
+Features
+Automatic feature extraction
+State-of-art models (VGG, Inception) are available for retraining for a specific dataset (transfer learning)
+Black box approach
+Roadmap
+data flow pipeline for non-scaled images (with transformations, queues)
+other Deep Learning frameworks. Currently only Keras and TensorFlow are covered. Yet Neon is the fastest
+other use cases - objects detection, image segmentation
+Pros
+Features are extracted automatically
+High accuracy: tuned models perform better than classification by humans
+Good performace without requirements for knowledge domain expertise
+Good performance in ML tasks with images
+Cons
+Extensive training time for deep models
+GPUs are needed. Otherwise, training will be ~ x10 times longer
+Deep Learning expertise is required
+Constantly changing field
+
+###############################################################################
+###############################################################################
+###############################################################################
+###############################################################################
